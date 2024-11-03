@@ -77,7 +77,9 @@ header img {
 }
 
 h1 {
+    font-family: "Poppins", sans-serif;
     font-size: 40px;
+    font-weight: 600;
     color: hsl(192, 100%, 9%);
     width: 27rem;
     margin: 9rem 0 2.5rem 2rem;
@@ -124,8 +126,10 @@ h1 {
 }
 
 h3 {
+    font-family: "Poppins", sans-serif;
     color: hsl(192, 100%, 9%);
     font-size: 30px;
+    font-weight: 600;
 }
 
 .box p {
@@ -200,8 +204,10 @@ h3 {
 }
 
 h2 {
+    font-family: "Poppins", sans-serif;
     color: hsl(192, 100%, 9%);
     font-size: 34px;
+    font-weight: 600;
     margin: 4rem 0 2.75rem 0;
 }
 
@@ -215,7 +221,7 @@ h2 {
     font-weight: 600;
     border: none;
     border-radius: 40px;
-    box-shadow: 0 5px 5px 0 hsla(322, 100%, 66%, 0.164);
+    box-shadow: 0 5px 5px 0 hsla(0, 4%, 5%, 0.164);
 }
 
 .cta-button:hover {
@@ -343,6 +349,319 @@ i:hover {
 
 .copyright {
     font-size: 13px;
-    margin-left: 65rem;
+    justify-self: flex-end;
+    margin-right: 3.5rem;
     grid-area: copyright;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+
+
+
+
+@media(max-width: 375px) {
+
+
+    #layout {
+        width: 375px;
+    }
+    
+    #fold {
+        width: 100%;
+        height: 43.5rem;
+        background-color: hsl(193, 100%, 96%);
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
+    
+    header {
+        width: 100%;
+        height: 8rem;
+        justify-self: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+    }
+    
+    header img {
+        width: 100px;
+        margin: 1rem 1rem 0 2rem;
+    }
+    
+    .header-button {
+        width: 6rem;
+        height: 1.5rem;
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(192, 100%, 9%);
+        font-family: "Open Sans", sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 5px 10px 0 hsla(192, 100%, 9%, 0.116);
+        margin: 1rem 1rem 0 0;
+    }
+    
+    .header-button:hover {
+        color: hsl(208, 11%, 55%)
+    }
+    
+    #hero {
+        width: 100%;
+        height: 31rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #hero img {
+        width: 300px;
+        margin-top: 3rem;
+    }
+    
+    h1 {
+        font-size: 25px;
+        width: 20rem;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    
+    #hero p {
+        font-size: 16px;
+        line-height: 1.5rem;
+        width: 19rem;
+        margin: 0 0 2rem 0;
+    }
+    
+    .hero-button {
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 12px;
+        margin-left: 0;
+    }
+    
+    .box {
+        width: 21rem;
+        height: 30.5rem;
+        border-radius: 15px;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 21px;
+    }
+    
+    .box p {
+        font-size: 14px;
+        line-height: 1.3rem;
+    }
+    
+    #grow {
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+    }
+    
+    #grow h3 {
+        margin: 0 0 1rem 0;
+    }
+    
+    #grow p {
+        width: 16rem;
+        margin: 0;
+    }
+    
+    #grow img {
+        width: 15rem;
+        height: 12rem;
+        margin: 3.5rem 0 3rem 0;
+    }
+
+    #flow {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #flow img {
+        width: 15rem;
+        height: 10rem;
+        margin: 4.5rem 0;
+    }
+    
+    #flow h3 {
+        margin: 0 0 1rem 0;
+    }
+    
+    #flow p {
+        width: 16rem;
+        margin: 0;
+    }
+    
+    #users {
+        flex-direction: column-reverse;
+        margin-bottom: 14rem;
+    }
+    
+    #users img {
+        width: 16rem;
+        height: 11rem;
+        margin: 4rem 0;
+    }
+    
+    #users h3 {
+        margin: 0 0 1rem 0;
+    }
+    
+    #users p {
+        width: 15.1rem;
+        margin-left: 0;
+    }
+    
+    #cta {
+        width: 22rem;
+        height: 11rem;
+        border-radius: 15px;
+        bottom: 775px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        text-align: center;
+        margin: 2.5rem 0 1.5rem 0;
+        width: 25rem;
+    }
+    
+    .cta-button {
+        width: 12rem;
+        height: 2.5rem;
+        font-size: 10px;
+    }
+    
+    footer {
+        width: 100%;
+        height: 52rem;
+        background-color: hsl(192, 100%, 9%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    
+    #footer-grid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    footer .logo {
+        width: 10rem;
+        margin: 8rem 0 1.5rem 1rem;
+    }
+    
+    footer .content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    
+    footer p {
+        color: hsl(0, 0%, 100%);
+    }
+    
+    footer a {
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+    }
+    
+    
+    .contact img {
+        height: 18px;
+        margin: 0 1.2rem 0 1rem;
+    }
+    
+    .location img {
+    margin-top: .5rem;
+    margin-right: 1.6rem;
+    }
+    
+    .location p {
+        width: 16.6rem;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 1.6rem;
+    }
+    
+    .phone  {
+        margin-bottom: 2rem;
+    }
+
+    .phone img {
+        margin-top: .1rem;
+    }
+
+    .email {
+        margin-bottom: 3.5rem;
+    }
+    
+    .email img {
+        height: 16px;
+        margin-top: .1rem;
+    }
+    
+    .email p {
+        margin-top: 0;
+    }
+    
+    .info {
+        display: flex;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+    
+    
+    .links-flex {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    
+    
+    .links {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    a {
+        font-size: 17px;
+        font-weight: 300;
+        margin-bottom: 1.2rem;
+    }
+    
+    .icons {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    
+    i {
+        width: 2.5rem;
+    }
+    
+    
+    .copyright {
+        font-size: 12px;
+        justify-self: center;
+        margin: 0 auto 0 auto;
+    }
 }
